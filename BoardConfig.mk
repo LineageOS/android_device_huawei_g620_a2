@@ -130,11 +130,13 @@ BOARD_SEPOLICY_DIRS += \
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \
+	init.te \
     mpdecision.te \
     rmt_storage.te \
     system_server.te \
     thermal-engine.te \
-    time_daemon.te
+    time_daemon.te \
+	vold
 
 # Vold
 BOARD_VOLD_MAX_PARTITIONS := 25
